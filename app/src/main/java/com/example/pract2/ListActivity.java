@@ -28,7 +28,7 @@ public class ListActivity extends AppCompatActivity
         for (int i = 0; i < 20; i++)
         {
             Random random = new Random();
-            User randomUser= new User("Name" + Math.abs(random.nextInt()), "Description " + Math.abs(random.nextInt()), i, random.nextBoolean());
+            User randomUser= new User();
             userList.add(randomUser);
         }
 

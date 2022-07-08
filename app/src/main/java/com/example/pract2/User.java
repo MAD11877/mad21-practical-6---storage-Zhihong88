@@ -7,11 +7,11 @@ public class User
     public int id;
     public boolean followed;
 
-    public User(String user_name, String user_description, int user_id, boolean user_followed)
-    {
-        name = user_name;
-        description = user_description;
-        id = user_id;
-        followed = user_followed;
+    public User(){}
+    public User (String _name, String _description, int _id, boolean _followed){
+        name = _name;
+        description = _description;
+        id = _id;
+        followed = _followed;
     }
 }
