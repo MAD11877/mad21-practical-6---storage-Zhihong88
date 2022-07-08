@@ -1,14 +1,14 @@
 package com.example.pract2;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Messagegroup extends AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+public class MessageGroup extends AppCompatActivity
 {
 
     @Override
@@ -25,7 +25,10 @@ public class Messagegroup extends AppCompatActivity
         btn_group1.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view) { replaceFragment(new Frame_Group1()); }
+            public void onClick(View view)
+            {
+                replaceFragment(new Frame_Group1());
+            }
         });
 
         btn_group2.setOnClickListener(new View.OnClickListener()
